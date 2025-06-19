@@ -55,7 +55,7 @@ bindsym $mod+Return exec alacritty
 # kill focused window
 bindsym $mod+q kill
 
-bindsym $mod+b exec firefox
+bindsym $mod+b exec vivaldi
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
@@ -120,16 +120,16 @@ bindsym $mod+Shift+n exec --no-startup-id alacritty -e nmtui
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 "1:TRM"
+set $ws2 "2:WWW"
+set $ws3 "3:DEV"
+set $ws4 "4:FSX"
+set $ws5 "5:MSG"
+set $ws6 "6:NIL"
+set $ws7 "7:NIL"
+set $ws8 "8:NIL"
+set $ws9 "9:NIL"
+set $ws10 "10:NIL"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -188,7 +188,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym Print exec --no-startup-id ~/.config/i3/screenshot.sh
+bindsym Print exec --no-startup-id flameshot gui
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -200,13 +200,13 @@ bar {
       i3bar_command i3bar --transparency
       status_command i3status-rs
       position top
-      font pango:ZedMono NF Extd , Font Awesome 6 Free 11
+      font pango:Font Awesome v4 Compatibility 11
       tray_output none
     colors {
         separator #928374
         background #00000000
         statusline #ebdbb2
-        focused_workspace #98971a #98971a #282828 #ebdbb2
+        focused_workspace #948979 #948979 #282828 #ebdbb2
         active_workspace #3c3836 #3c3836 #ebdbb2 #ebdbb2
         inactive_workspace #282828 #282828 #a89984 #a89984
         urgent_workspace #282828 #282828 #a89984 #a89984
@@ -233,7 +233,7 @@ client.unfocused        $bg $bg   $fg
 client.focused_inactive $bg $bg   $fg
 client.urgent           $bg $red  $fg
 
-exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaperflare.com_wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/ALLqk82.png
 bindsym $mod+Shift+w exec redshift -O 5000
 bindsym $mod+x exec --no-startup-id ~/.config/i3/lock.sh
 
@@ -241,15 +241,15 @@ for_window [class=".*"] border pixel 1
 
 
 # Assign windows to workspaces
-assign [class="Alacritty"] $ws1
-assign [class="firefox"] $ws2
-assign [class="Alacritty" instance="neovim"] $ws3
-assign [class="Alacritty" instance="ranger"] $ws4
+#assign [class="Alacritty"] $ws1
+#assign [class="firefox"] $ws2
+#assign [class="Alacritty" instance="neovim"] $ws3
+#assign [class="Alacritty" instance="ranger"] $ws4
 assign [class="Telegram"] $ws5
 
 # Auto-start applications
 exec --no-startup-id i3-msg "workspace $ws1; exec alacritty"
-exec --no-startup-id i3-msg "workspace $ws2; exec firefox"
+exec --no-startup-id i3-msg "workspace $ws2; exec vivaldi"
 exec --no-startup-id i3-msg "workspace $ws3; exec alacritty --class neovim -t Neovim -e nvim"
 exec --no-startup-id i3-msg "workspace $ws4; exec alacritty --class ranger -t ranger -e ranger"
 exec --no-startup-id i3-msg "workspace $ws5; exec Telegram"
@@ -257,4 +257,7 @@ exec --no-startup-id i3-msg "workspace $ws5; exec Telegram"
 # Land on empty workspace 6 after boot
 exec --no-startup-id i3-msg "workspace $ws6"
 bindsym $mod+Shift+b bar mode toggle
-exec --no-startup-id i3-msg "bar mode invisible"
+
+
+# Gaps 
+gaps inner 5

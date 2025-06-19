@@ -1,35 +1,20 @@
 
+icons_format = "{icon}"
+
 [theme]
 theme = "gruvbox-dark"
 
 [icons]
-icons = "material-nf"
-#ttf-firacode-nerd (For icons over the lower menu)
-
-[[block]]
-block = "time"
-interval = 5
-format = " $timestamp.datetime(f:'%a %d/%m/%y %R') "
-[block.theme_overrides]
-idle_bg = "#98971a"
-idle_fg = "#282828"
-
-[[block]]
-block = "cpu"
-interval = 1
-format_alt = " $icon $frequency{ $boost|} "
-[block.theme_overrides]
-idle_bg = "#458588"
-idle_fg = "#282828"
-
+icons = "awesome4"
+# ttf-firacode-nerd (For icons over the lower menu)
 
 [[block]]
 block = "net"
 format = " ^icon_net_down$speed_down.eng(prefix:K) ^icon_net_up$speed_up.eng(prefix:K) "
 format_alt = " $icon {$signal_strength $ssid|Wired connection} "
 [block.theme_overrides]
-idle_bg = "#d65d0e"
-idle_fg = "#ebdbb2"
+idle_bg = "#948979"
+idle_fg = "#282828"
 
 [[block]]
 block = "sound"
@@ -37,8 +22,8 @@ block = "sound"
 button = "left"
 cmd = "pavucontrol"
 [block.theme_overrides]
-idle_bg = "#928374"
-idle_fg = "#282828"
+idle_bg = "#282828"
+idle_fg = "#ebdbb2"
 
 
 [[block]]
@@ -47,16 +32,16 @@ hue_shifter = "redshift"
 step = 50
 click_temp = 4000
 [block.theme_overrides]
-idle_bg = "#b16286"
+idle_bg = "#948979"
 idle_fg = "#282828"
 
 [[block]]
-block = "backlight"
-missing_format = ""
+block = "time"
+interval = 60
+format = "   $timestamp.datetime(f:'%A, %B %d - %-I:%M %P') "
 [block.theme_overrides]
-idle_bg = "#d79921"
-idle_fg = "#fbf1c7"
-
+idle_bg = "#282828"
+idle_fg = "#ebdbb2"
 
 [[block]]
 block = "battery"
@@ -66,6 +51,10 @@ full_format="$icon 100%"
 device = "DisplayDevice"
 driver = "upower"
 [block.theme_overrides]
-idle_bg = "#689d6a"
-idle_fg = "#fbf1c7"
-
+discharging_fg = "#ebdbb2"
+discharging_bg = "#282828"
+charging_fg = "#282828"
+charging_bg = "#948979"
+full_fg = "#282828"
+empty_fg = "#ebdbb2"
+empty_bg = "#282828"
