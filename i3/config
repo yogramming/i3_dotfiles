@@ -226,9 +226,10 @@ set $blue    #458588
 set $magenta #b16286
 set $cyan    #689d6a
 set $white   #a89984
+set $grey    #948979
 
 # Window colors
-client.focused          $bg $bg $fg
+client.focused          $grey $grey $fg
 client.unfocused        $bg $bg   $fg
 client.focused_inactive $bg $bg   $fg
 client.urgent           $bg $red  $fg
@@ -237,7 +238,7 @@ exec_always --no-startup-id feh --bg-fill ~/Pictures/ALLqk82.png
 bindsym $mod+Shift+w exec redshift -O 5000
 bindsym $mod+x exec --no-startup-id ~/.config/i3/lock.sh
 
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 
 
 # Assign windows to workspaces
@@ -261,3 +262,6 @@ bindsym $mod+Shift+b bar mode toggle
 
 # Gaps 
 gaps inner 5
+
+# Boders 
+
