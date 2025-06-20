@@ -1,0 +1,28 @@
+2025-06-19 20:26:44.904 [info] ComputeTargetPlatform: linux-x64
+2025-06-19 20:26:46.591 [info] ComputeTargetPlatform: linux-x64
+2025-06-19 20:26:50.395 [info] Getting Manifest... github.copilot
+2025-06-19 20:26:50.397 [info] Getting Manifest... ms-python.python
+2025-06-19 20:26:50.398 [info] Getting Manifest... ms-python.vscode-pylance
+2025-06-19 20:26:50.934 [info] Installing extension: github.copilot {"productVersion":{"version":"1.100.2","date":"2025-05-14T21:47:40.416Z"},"pinned":false,"operation":3,"isApplicationScoped":true,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/yogramming/.vscode/extensions/extensions.json","path":"/home/yogramming/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2025-06-19 20:26:50.938 [info] Installing extension: ms-python.python {"productVersion":{"version":"1.100.2","date":"2025-05-14T21:47:40.416Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/yogramming/.vscode/extensions/extensions.json","path":"/home/yogramming/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2025-06-19 20:26:50.943 [info] Installing extension: ms-python.vscode-pylance {"productVersion":{"version":"1.100.2","date":"2025-05-14T21:47:40.416Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/yogramming/.vscode/extensions/extensions.json","path":"/home/yogramming/.vscode/extensions/extensions.json","scheme":"vscode-userdata"}}
+2025-06-19 20:26:52.568 [info] Getting Manifest... ms-python.vscode-pylance
+2025-06-19 20:26:52.654 [info] Getting Manifest... ms-python.debugpy
+2025-06-19 20:26:53.067 [info] Getting Manifest... github.copilot-chat
+2025-06-19 20:26:53.151 [info] Getting Manifest... ms-python.python
+2025-06-19 20:26:54.061 [info] Getting Manifest... ms-python.debugpy
+2025-06-19 20:26:59.434 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Internal Code: 0. Executed: true. Duration: 1772ms.
+2025-06-19 20:27:01.783 [info] Extension signature verification result for ms-python.python: Success. Internal Code: 0. Executed: true. Duration: 932ms.
+2025-06-19 20:27:03.641 [info] Extracted extension to file:///home/yogramming/.vscode/extensions/ms-python.python-2025.8.0-linux-x64: ms-python.python
+2025-06-19 20:27:03.733 [info] Renamed to /home/yogramming/.vscode/extensions/ms-python.python-2025.8.0-linux-x64
+2025-06-19 20:27:03.771 [info] Marked extension as removed ms-python.python-2025.6.1-linux-x64
+2025-06-19 20:27:03.775 [info] Extension installed successfully: ms-python.python vscode-userdata:/home/yogramming/.vscode/extensions/extensions.json
+2025-06-19 20:27:04.478 [info] Extracted extension to file:///home/yogramming/.vscode/extensions/ms-python.vscode-pylance-2025.6.1: ms-python.vscode-pylance
+2025-06-19 20:27:04.696 [info] Extension signature verification result for github.copilot: Success. Internal Code: 0. Executed: true. Duration: 1531ms.
+2025-06-19 20:27:04.742 [info] Renamed to /home/yogramming/.vscode/extensions/ms-python.vscode-pylance-2025.6.1
+2025-06-19 20:27:04.769 [info] Marked extension as removed ms-python.vscode-pylance-2025.5.1
+2025-06-19 20:27:04.779 [info] Extension installed successfully: ms-python.vscode-pylance vscode-userdata:/home/yogramming/.vscode/extensions/extensions.json
+2025-06-19 20:27:05.184 [info] Extracted extension to file:///home/yogramming/.vscode/extensions/github.copilot-1.335.0: github.copilot
+2025-06-19 20:27:05.193 [info] Renamed to /home/yogramming/.vscode/extensions/github.copilot-1.335.0
+2025-06-19 20:27:05.212 [info] Marked extension as removed github.copilot-1.330.0
+2025-06-19 20:27:05.217 [info] Extension installed successfully: github.copilot vscode-userdata:/home/yogramming/.vscode/extensions/extensions.json

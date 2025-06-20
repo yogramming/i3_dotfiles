@@ -1,0 +1,6 @@
+2025-06-19 20:26:44.163 [info] Started local extension host with pid 63840.
+2025-06-19 20:26:44.533 [info] ComputeTargetPlatform: linux-x64
+2025-06-19 20:26:44.780 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-06-19 20:26:45.203 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-06-19 20:26:47.487 [info] [perf] Render performance baseline is 27ms
+2025-06-19 20:26:49.388 [info] Auto updating outdated extensions. github.copilot, ms-python.python, ms-python.vscode-pylance
